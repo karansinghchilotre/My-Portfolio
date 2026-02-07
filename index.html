@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Karan — Portfolio</title>
+  <meta name="description" content="Senior Copywriter & Content Strategist. Proof-led work across agencies, brands, and campaigns."/>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="styles.css"/>
+  
+  <!-- Pop Art Styling -->
+  <style>
+    .pop-bubble {
+      position: relative;
+      background: #FFE066;
+      border: 4px solid #FF4444;
+      border-radius: 50px;
+      padding: 15px 25px;
+      display: inline-block;
+      transform: rotate(-2deg);
+      box-shadow: 6px 6px 0px #000;
+    }
+    
+    .pop-bubble:before {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 30px;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #FFE066;
+      filter: drop-shadow(2px 2px 0px #000);
+    }
+    
+    .comic-sound {
+      font-weight: 900;
+      font-size: 2rem;
+      color: #FF4444;
+      text-shadow: 3px 3px 0px #000, -1px -1px 0px #FFF;
+      transform: rotate(15deg);
+      display: inline-block;
+    }
+    
+    .halftone-bg {
+      background-image: radial-gradient(circle, #000 1px, transparent 1px);
+      background-size: 15px 15px;
+      background-color: #00BFFF;
+      position: relative;
+    }
+    
+    .retro-ad {
+      background: linear-gradient(45deg, #FF6B35, #F7931E);
+      border: 8px solid #000;
+      transform: rotate(-1deg);
+      box-shadow: 10px 10px 0px rgba(0,0,0,0.8);
+    }
+    
+    .pow-text {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .pow-text:after {
+      content: 'POW!';
+      position: absolute;
+      top: -20px;
+      right: -30px;
+      font-size: 0.8rem;
+      background: #FFE066;
+      color: #000;
+      padding: 3px 8px;
+      border: 2px solid #000;
+      border-radius: 50%;
+      font-weight: bold;
+      transform: rotate(15deg);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top halftone-bg">
+    <div class="wrap top__inner">
+      <div class="id">
+        <div class="id__mark pop-bubble">K</div>
+        <div class="id__text">
+          <div class="id__name">Karan</div>
+          <div class="id__role">Senior Copywriter • Content Strategist</div>
+          <span class="comic-sound">BOOM!</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#work">Work Library</a>
+        <a href="#collections">Collections</a>
+        <a href="#music">Music Lab</a>
+        <a href="#about">About</a>
+        <a class="btn btn--ghost retro-ad" id="themeBtn" href="javascript:void(0)" aria-label="Toggle theme">◐</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__left">
+          <div class="pop-bubble">
+            <p class="kicker">Proof-led portfolio</p>
+          </div>
+          
+          <h1>
+            Ideas that <span class="grad pow-text">travel</span>
+            <span class="comic-sound" style="font-size: 1rem; margin-left: 10px;">WHOOSH!</span>
+          </h1>
+          
+          <div class="speech-bubble" style="background: #FF6B6B; color: white; padding: 20px; border-radius: 30px; position: relative; margin: 20px 0;">
+            <p class="lede" style="margin: 0;">
+              Copywriting & content strategy built in agencies, sharpened on the internet.
+            </p>
+            <div style="position: absolute; bottom: -15px; left: 50px; width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-top: 20px solid #FF6B6B;"></div>
+          </div>
+
+          <div class="proof retro-ad" style="background: linear-gradient(135deg, #00BFFF, #FFE066); padding: 20px;">
+            <div style="text-align: center; margin-bottom: 15px;">
+              <span class="comic-sound" style="font-size: 1.5rem; color: #000;">STATS ATTACK!</span>
+            </div>
+            <div style="display: flex; justify-content: space-around;">
+              <div class="proof__chip">
+                <div class="proof__big" id="proofViews">62.8k</div>
+                <div class="proof__small">Top reel views</div>
+              </div>
+              <div class="proof__chip">
+                <div class="proof__big" id="proofShares">1258</div>
+                <div class="proof__small">Shares (single reel)</div>
+              </div>
+              <div class="proof__chip">
+                <div class="proof__big" id="proofAgencies">3</div>
+                <div class="proof__small">Agencies</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__cta" style="margin-top: 30px;">
+            <a class="btn retro-ad" href="#work" style="background: #FF4444; color: white; text-decoration: none; padding: 15px 30px; font-weight: bold;">EXPLORE WORK!</a>
+            <a class="btn btn--ghost pop-bubble" href="#" id="openFeatured" style="background: #FFE066; color: #000; margin-left: 15px;">Open featured proof</a>
+          </div>
+
+          <div class="feature-row" style="margin-top: 30px;">
+            <button class="feature retro-ad" data-open="delhi-times" style="background: #00FF7F; margin-bottom: 10px;">
+              <span class="feature__tag">Featured</span>
+              <span class="feature__title">Delhi Times quote feature</span>
+              <span class="feature__meta">Press proof</span>
+            </button>
+
+            <button class="feature retro-ad" data-open="reels-proof" style="background: #FF69B4; margin-bottom: 10px;">
+              <span class="feature__tag">Reels</span>
+              <span class="feature__title">Self-expression proof set</span>
+              <span class="feature__meta">Views • likes • saves • shares</span>
+            </button>
+
+            <button class="feature retro-ad" data-scroll="#music" style="background: #FFD700;">
+              <span class="feature__tag">Music</span>
+              <span class="feature__title">@karankegaane</span>
+              <span class="feature__meta">Buckets • strategy • community</span>
+            </button>
+          </div>
+        </div>
+
+        <aside class="hero__right">
+          <div class="poster retro-ad" style="background: linear-gradient(45deg, #9932CC, #FF1493); color: white;">
+            <div class="poster__cap" style="background: #FFE066; color: #000; padding: 5px 15px; border-radius: 20px; display: inline-block; font-weight: bold;">About</div>
+            <div class="poster__title" style="margin: 15px 0;">Concept to Platform to Proof</div>
+            <div class="pop-bubble" style="background: white; color: #000; border-color: #FFE066;">
+              <p class="poster__text" style="margin: 0;">
+                Filter by agency, brand, or format. Open proof sets instantly.
+              </p>
+            </div>
+
+            <div class="poster__badges" style="margin-top: 20px;">
+              <span class="pill pop-bubble" style="background: #FF6B35; color: white; margin: 5px;">Social</span>
+              <span class="pill pop-bubble" style="background: #00BFFF; color: white; margin: 5px;">Reels</span>
+              <span class="pill pop-bubble" style="background: #32CD32; color: white; margin: 5px;">EDMs</span>
+              <span class="pill pop-bubble" style="background: #FF4444; color: white; margin: 5px;">Internal Comms</span>
+              <span class="pill pop-bubble" style="background: #FFE066; color: #000; margin: 5px;">PDP / E-comm</span>
+              <span class="pill pop-bubble" style="background: #9932CC; color: white; margin: 5px;">OOH / Transit</span>
+            </div>
+            
+            <div style="position: absolute; top: -20px; right: 20px;">
+              <span class="comic-sound" style="font-size: 1.2rem; color: #FFE066;">ZAP!</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section halftone-bg">
+      <div class="wrap section__head">
+        <div>
+          <h2 style="position: relative;">
+            Work
+            <span class="comic-sound" style="position: absolute; top: -15px; right: -30px; font-size: 1rem;">BANG!</span>
+          </h2>
+          <div class="pop-bubble">
+            <p class="muted" style="margin: 0;">Proof sets. Filtered fast.</p>
+          </div>
+        </div>
+        <div class="search retro-ad" style="background: white; padding: 10px;">
+          <input id="q" type="search" placeholder="Search brands, campaigns, keywords…" style="border: 3px solid #000; padding: 10px; font-weight: bold;" />
+        </div>
+      </div>
+
+      <div class="wrap library">
+        <aside class="filters retro-ad" style="background: linear-gradient(135deg, #FFE066, #FF6B35); padding: 25px;">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <span class="comic-sound" style="color: #000;">FILTER POWER!</span>
+          </div>
+          
+          <div class="filters__block">
+            <div class="filters__title pop-bubble" style="background: #FF4444; color: white;">Agency</div>
+            <div class="chips" id="agencyChips"></div>
+          </div>
+
+          <div class="filters__block">
+            <div class="filters__title pop-bubble" style="background: #00BFFF; color: white;">Industry</div>
+            <div class="chips" id="industryChips"></div>
+          </div>
+
+          <div class="filters__block">
+            <div class="filters__title pop-bubble" style="background: #32CD32; color: white;">Format</div>
+            <div class="chips" id="formatChips"></div>
+          </div>
+
+          <div class="filters__block">
+            <div class="filters__title pop-bubble" style="background: #9932CC; color: white;">Tags</div>
+            <div class="chips" id="tagChips"></div>
+          </div>
+
+          <div class="filters__actions">
+            <button class="btn btn--ghost btn--sm retro-ad" id="clear" style="background: #FF4444; color: white;">Clear</button>
+          </div>
+
+          <div class="filters__active muted" id="active">No filters applied.</div>
+        </aside>
+
+        <div class="grid" id="grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- COLLECTIONS -->
+    <section id="collections" class="section section--alt">
+      <div class="wrap section__head">
+        <div>
+          <h2 style="position: relative;">
+            Collections
+            <span class="comic-sound" style="position: absolute; top: -15px; right: -40px; font-size: 1rem; color: #FF6B35;">WHAM!</span>
+          </h2>
+          <div class="pop-bubble">
+            <p class="muted" style="margin: 0;">Curated for hiring managers.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap collections" id="collectionsGrid"></div>
+    </section>
+
+    <!-- MUSIC -->
+    <section id="music" class="section halftone-bg">
+      <div class="wrap section__head">
+        <div>
+          <h2 style="position: relative;">
+            Music Lab
+            <span class="comic-sound" style="position: absolute; top: -15px; right: -35px; font-size: 1rem; color: #FFE066;">GROOVE!</span>
+          </h2>
+          <div class="pop-bubble">
+            <p class="muted" style="margin: 0;">Content strategy as an editorial system.</p>
+          </div>
+        </div>
+        <div class="right">
+          <a class="btn btn--ghost btn--sm retro-ad" id="musicLink" target="_blank" rel="noreferrer" style="background: #FF69B4; color: white;">Visit page ↗</a>
+        </div>
+      </div>
+
+      <div class="wrap music">
+        <div class="bucket retro-ad" style="background: #00FF7F; color: #000;">
+          <div class="bucket__title">Playlist sneak peeks</div>
+          <div class="bucket__desc">Timely, snackable, repeatable.</div>
+        </div>
+        <div class="bucket retro-ad" style="background: #FF6B35; color: white;">
+          <div class="bucket__title">Situation-based recommendations</div>
+          <div class="bucket__desc">Mood → moment → track.</div>
+        </div>
+        <div class="bucket retro-ad" style="background: #9932CC; color: white;">
+          <div class="bucket__title">Trends & industry dissections</div>
+          <div class="bucket__desc">Why songs move like products.</div>
+        </div>
+        <div class="bucket retro-ad" style="background: #00BFFF; color: white;">
+          <div class="bucket__title">Interviews with aficionados</div>
+          <div class="bucket__desc">Community + credibility.</div>
+        </div>
+        <div class="bucket retro-ad" style="background: #FFD700; color: #000;">
+          <div class="bucket__title">Time travel to masterpieces</div>
+          <div class="bucket__desc">Iconic songs, told like stories.</div>
+        </div>
+        <div class="bucket retro-ad" style="background: #FF1493; color: white;">
+          <div class="bucket__title">Concert updates</div>
+          <div class="bucket__desc">India + global, mapped to moments.</div>
+        </div>
+        <div class="bucket retro-ad" style="background: #32CD32; color: white;">
+          <div class="bucket__title">Solo rickshaw concerts</div>
+          <div class="bucket__desc">Format experiment + signature IP.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section--alt">
+      <div class="wrap about">
+        <div class="about__left">
+          <h2 style="position: relative;">
+            About
+            <span class="comic-sound" style="position: absolute; top: -15px; right: -25px; font-size: 1rem; color: #FF4444;">STORY!</span>
+          </h2>
+          
+          <div class="speech-bubble" style="background: #00BFFF; color: white; padding: 20px; border-radius: 30px; position: relative;">
+            <p class="muted" style="margin: 0; color: white;">
+              Writing & strategy that fits platforms, carries brand voice, and drives response.
+            </p>
+            <div style="position: absolute; bottom: -15px; left: 30px; width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-top: 20px solid #00BFFF;"></div>
+          </div>
+
+          <div class="about__points" style="margin-top: 30px;">
+            <div class="point pop-bubble" style="background: #FFE066; margin-bottom: 15px; display: block;"><strong>Strength:</strong> Concept-led campaigns with native execution</div>
+            <div class="point pop-bubble" style="background: #FF6B35; color: white; margin-bottom: 15px; display: block;"><strong>Comfort zone:</strong> Social, reels, EDMs, product content</div>
+            <div class="point pop-bubble" style="background: #32CD32; color: white; margin-bottom: 15px; display: block;"><strong>Range:</strong> Hospitality, finance, insurance, FMCG, entertainment</div>
+          </div>
+        </div>
+
+        <div class="about__right">
+          <div class="contact retro-ad" style="background: linear-gradient(45deg, #FF1493, #9932CC); color: white; padding: 30px;">
+            <div class="contact__title" style="text-align: center; margin-bottom: 20px;">
+              <span class="comic-sound" style="color: #FFE066;">CONTACT!</span>
+            </div>
+            <div class="contact__row" style="text-align: center;">
+              <a class="btn btn--sm pop-bubble" id="emailLink" href="mailto:your.email@example.com" style="background: #FFE066; color: #000; margin: 5px;">Email</a>
+              <a class="btn btn--ghost btn--sm pop-bubble" id="igLink" target="_blank" rel="noreferrer" style="background: #FF6B35; color: white; margin: 5px;">Instagram ↗</a>
+              <a class="btn btn--ghost btn--sm pop-bubble" id="liLink" target="_blank" rel="noreferrer" style="background: #00BFFF; color: white; margin: 5px;">LinkedIn ↗</a>
+            </div>
+            <div class="pop-bubble" style="background: white; color: #000; margin-top: 15px; text-align: center;">
+              <div class="muted tiny" style="color: #000;">Tip: add "available on request" for NDA work.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- DRAWER -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__backdrop" data-close></div>
+    <div class="drawer__panel retro-ad" role="dialog" aria-modal="true" aria-labelledby="dTitle" style="background: linear-gradient(135deg, #FFE066, #FF6B35);">
+      <div class="drawer__head">
+        <div>
+          <div class="drawer__kicker pop-bubble" id="dKicker"></div>
+          <div class="drawer__title" id="dTitle"></div>
+          <div class="drawer__meta muted" id="dMeta"></div>
+        </div>
+        <button class="btn btn--ghost btn--sm retro-ad" data-close style="background: #FF4444; color: white;">✕</button>
+      </div>
+      <div class="drawer__body">
+        <p class="muted" id="dDesc"></p>
+        <div class="groups" id="dGroups"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
